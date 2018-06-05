@@ -45,6 +45,9 @@ a, a:hover {
   box-sizing: border-box;
 }
 
+a[href^=tel]{
+    color: #000;
+}
 
 .clearfix:before,
 .clearfix:after {
