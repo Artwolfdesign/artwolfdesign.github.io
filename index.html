@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Artwolf</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // Плавный скролл по якорям
+      $('a[href^="#"]').click(function () { 
+          elementClick = $(this).attr("href");
+        destination = $(elementClick).offset().top;
+        if($.browser.safari){
+        $('body').animate( { scrollTop: destination }, 400 );
+        } else {
+            $('html').animate( { scrollTop: destination }, 400 );
+        }
+        return false;
+       });
+    });
+  </script>
+
+</head>
+
+
+ <!-- Main -->
+<body>
+<div class="wrapper">
+ <div id="main">
+  <div id="header">
+
+  	<div class="logo">
+  		<a href="#">
+  		<img src="images/logo.png">
+      </a>
+    </div>
+    <div class="nav">
+      <a href="#services" class="serv">Услуги</a>
+      <a href="#portfolio" class="por">Портфолио</a>
+      <!-- <li><a href="#">Формула успеха</a> -->
+      <span class="phone">+38(093) 392 49 53</span>
+    </div>   
+  </div>
+      <div class="wrap"><div class="header-line"></div></div> 
+  <div id="home">
+     <h1>Мастерская веб-дизайна ArtWolf</h1>
+     <h2>Удобные сайты для всех видов устройств</h2>
+     <a class="btn" href="#contacts">связаться</a>
+     </div>
+
+</div>
+
+ <!-- Services -->
+   <div id="services">
+       <div class="container">
+        <h3>Услуги</h3>
+     <div class="row">
+      <div class="services">
+        <div class="service-item">
+
+          <div class="service-icon"><img src="images/ic_prototype.svg"></div>
+          <div><h4 style="text-align: left;">Прототипирование</h4>
+        <p>Прототип помогает лучше проработать бизнесс логику клиента и сложную фукнциональность сайта.</p></div>
+
+       </div>
+
+               <div class="service-item">
+
+          <div class="service-icon"><img src="images/ic_landing.svg"></div>
+          <div><h4 style="text-align: left;">Landing page</h4>
+        <p>Одностраничный сайты являются сейчас самым эфективным способом продажи какой-либо одной услуги.</p></div>
+
+       </div>
+
+               <div class="service-item">
+          <div class="service-icon"><img src="images/ic_ecomerce.svg"></div>
+          <div><h4 style="text-align: left;">Интернет-магазин</h4>
+        <p>Проектируя интернет магазин мы стремиммся к максимально удобному интерфейсу, что позволит пользователю легко делать покупки.</p></div>
+       </div>
+   
+        <div class="service-item">
+          <div class="service-icon"><img src="images/ic_corporate.svg"></div>
+          <div><h4 style="text-align: left;">Корпоративный сайт</h4>
+        <p>Проектирование кропоративного сайта основывается на 2-х основных составляющие: передать отмосферу, которая царит в компании и сделать поиск для посетителя максимально удобным.</p></div>
+
+       </div>
+
+               <div class="service-item">
+          <div class="service-icon"><img src="images/ic_logo.svg"></div>
+
+          <div><h4 style="text-align: left;">Лого для сайта</h4>
+        <p>В случае отсутствия логотипа для вашего сайта мы вам можем предложить простое решение, которое будет отлично смотрется на Вашем сайте.</p></div>
+
+       </div>
+
+               <div class="service-item">
+          <div class="service-icon"><img src="images/ic_pre-ico.svg"></div>
+          <div><h4  style="text-align: left;">Landing для pre-ICO</h4>
+        <p>Мы имеем хороший опыт в создании сайтов по криптотематике. Если Вам нужен хороший сайт - обращайтесь к нам.</p></div>
+       </div>
+    </div>
+   </div>
+  </div>
+ <!-- Advantages -->
+
+</div>
+   <div class="grey">
+<div class="container">
+        <h3>4 причины заказать у нас</h3>
+                  <div class="adv">
+
+
+        <div class="reason-item">
+          <div class="black"><img class="img-adv" src="images/adv_adaptive.svg"></div>
+        <div class="des"><h5 style="text-align: left;">Хорошая адаптивность</h5>
+        <p>Наш дизайн предусматривает адаптацию под все экраны. Полноценный дизайн делается под 5 экранов.</p></div>
+        </div>
+
+
+        <div class="reason-item">
+          <div class="black"><img class="img-adv" src="images/adv_load.svg"></div>
+        <div class="des"><h5 style="text-align: left;">Скорость загрузки</h4>
+        <p>Наши сайты быстро загружаются,не тормозят на сустройствах со слабой производительностью.</p></div>
+        </div>
+
+
+        <div class="reason-item">
+          <div class="black"><img class="img-adv" src="images/adv_mockup.svg"></div>
+        <div class="des"><h5 style="text-align: left;">Интерактивные мокапы</h5>
+        <p>Мокап - это реалистичная презентация сайта созданная в Axure, inVision.</p></div>
+        </div>
+
+
+
+        <div class="reason-item">
+          <div class="black"><img class="img-adv" src="images/adv_html5.svg"></div>
+        <div class="des"><h5 style="text-align: left;">Легкость в верстке</h5>
+        <p>Наши макеты имеют заложеные стили в элементах сайта. Взаимодействие с верстальщиком происходит через Zeplin.</p></div>
+        </div>
+
+
+      </div>
+  </div>
+  </div>
+
+ <!-- Portfolio -->
+<div id="portfolio">
+<div class="container">
+
+<h3>Портфолио</h3> 
+ <div class="row">
+ <div class="services">
+
+
+  <div class="portfolio-item">
+    <a href="https://www.behance.net/gallery/62399129/Satoshi-Nakamoto-Memorial-Landing" target="_blank"><img class="port-img" src="images/portf-satoshi.jpg" ></a>
+  </div>
+   
+
+  <div class="portfolio-item">
+    <a href="https://www.behance.net/gallery/61400599/ICO-invest-platform" target="_blank"><img class="port-img" src="images/portf-newico.jpg"></a>
+  </div>
+
+
+  <div class="portfolio-item">
+    <a href="https://www.behance.net/gallery/54398845/Template-for-restoraunt-Hotel-business" target="_blank"><img class="port-img" src="images/portf-r&h_b.jpg"></a>
+  </div>
+   
+
+  <div class="portfolio-item">
+    <a href="https://www.behance.net/gallery/53281405/Internet-market-ZooVet" target="_blank"><img class="port-img" src="images/portf-zoovet.jpg"></a>
+  </div>
+
+    <div class="portfolio-item">
+    <a href="https://www.behance.net/gallery/66307505/Landing-Business-tours-to-the-silicon-valey" target="_blank"><img class="port-img" src="images/portf-svalley.jpg"></a>
+  </div>
+   
+
+  <div class="portfolio-item">
+    <a href="https://www.behance.net/gallery/43863767/Web-design-template-in-peach-colors" target="_blank"><img class="port-img" src="images/portf-peach.jpg"></a>
+  </div>
+  </div>
+ </div>
+ </div>
+
+</div>
+</div>
+
+
+ <!-- Contacts -->
+
+ <div id="contacts">
+     <img src="images/ic_call.svg" style="margin-bottom: 12px">
+     <h3>Звоните нам по телефону</h3>
+    
+     <div class="number"><h2>+38 (093) 392 49 53</div>
+     <h2 style="margin-bottom: 0px">Заказы принимаем</h2>
+     <h6>с 12 00 до 19 00 в будние дни</h6>
+</div>
+
+ <!-- Footer -->
+
+<div id="footer">
+      <div class="logo-white">
+      <img src="images/logo.png">
+    </div>
+      <h4>Спасибо за визит :)</h4>
+      <div class="social">
+
+        <a href="https://www.behance.net/DimmiArtist" target="_blank"><div class="social-item">
+          <img src="images/icon_behance.svg"></a>
+        </div>
+
+         <a href="https://dribbble.com/ArtWolf" target="_blank"><div class="social-item">
+          <img src="images/icon_dribbble.svg"></a>
+        </div>
+
+          <a href="https://ua.depositphotos.com/portfolio-17073400.html" target="_blank">
+            <div class="social-item">
+         <img src="images/icon_dp.svg"></a>
+        </div>
+
+      </div>
+  </div>
+
+
+</div>
+</body>
+</html>
