@@ -282,6 +282,14 @@ p{
     color: #424242;
 }
 
+.link{
+  font: 16px 'SourceSansPro-Bold';
+    color: #333;
+}
+
+.link:hover{
+    color: #323ABB;
+}
 
 .img-adv{
 height: 55%;
